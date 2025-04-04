@@ -35,7 +35,7 @@ if st.button("Apna Dahej Jane"):
     total_dowry = (base_amount + salary_multiplier*base_amount_govt + cow_value + property_value)/(siblings+1)
     #st.write(total_dowry)
     # Additional items and their costs
-    st.write(total_dowry)
+    
     items = []
     deductions = 0
     if total_dowry > 12000000 :
@@ -158,7 +158,10 @@ if st.button("Apna Dahej Jane"):
             if image_files:
                 random_image = random.choice(image_files)
                 image_path = os.path.join(image_folder, random_image)
-                st.image(image_path, caption=f"✨ aapki hone wali dulhan ✨", use_column_width=True)
+                st.image(image_path, caption=f"✨ Aapki hone wali dulhan ✨", use_column_width=True)
+
+
+
             else:
                 st.warning(f"No .jpeg images found in `{image_folder}`.")
         else:
