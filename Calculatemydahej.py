@@ -122,9 +122,7 @@ if st.button("Apna Dahej Jane"):
     elif total_dowry > 3000000:
         items.append("Patna mein flat")
         deductions += 700000
-    if total_dowry > 2500000:
-        items.append("Aur Ek Russian")
-        deductions += 6000
+    
     
     
     # Final amount after deductions
